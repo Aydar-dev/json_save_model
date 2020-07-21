@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   {% if msg %}
+       <h3>
+        {{ msg }}
+       </h3>
+       <hr>
+   {% endif %}
+   <a href="{% url 'index' %}?status=init_data">
+        <button >
+            init data
+        </button>
+   </a>
+   <br>
+   <br>
+    <a href="{% url 'index' %}?status=delete_data">
+        <button >
+            delete data
+        </button>
+    </a>
+
+</body>
+</html>

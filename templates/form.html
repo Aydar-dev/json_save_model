@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form href="{% url 'test-post' %}" method="post">
+        {% csrf_token %}
+        <input type="text" name="username1">
+        <input type="text" name="username2">
+        <input type="text" name="username3">
+        <input type="text" name="username4">
+        <button type="submit">
+            submit
+        </button>
+    </form>
+</body>
+</html>
